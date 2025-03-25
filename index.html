@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Erick Galindo</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background: url('https://images.steamusercontent.com/ugc/1859439050412995416/ACE18B5533B284DA875C0F49367B91CCABC79627/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true') no-repeat center/cover;
+      color: white;
+      font-family: 'Arial', sans-serif;
+    }
+
+    @keyframes glow {
+      0% { box-shadow: 0 0 8px rgba(0, 255, 255, 0.6); }
+      25% { box-shadow: 0 0 12px rgba(0, 255, 127, 0.7); }
+      50% { box-shadow: 0 0 16px rgba(255, 0, 255, 0.8); }
+      75% { box-shadow: 0 0 12px rgba(255, 165, 0, 0.7); }
+      100% { box-shadow: 0 0 8px rgba(0, 255, 255, 0.6); }
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      max-width: 380px;
+      padding: 20px;
+      border-radius: 12px;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(5px);
+      text-align: center;
+      animation: glow 3s infinite alternate;
+    }
+
+    img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 8px rgba(6, 255, 238, 0.845);
+    }
+
+    h1 {
+      font-size: 22px;
+      margin: 8px 0;
+    }
+
+    h2 {
+      font-size: 18px;
+      color: #00e0f0;
+      margin: 4px 0;
+    }
+
+    p {
+      font-size: 15px;
+      margin: 0 15px 8px;
+      line-height: 1.5;
+    }
+
+    ul {
+      padding: 0;
+      margin: 8px 0;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .badge {
+      padding: 7px 11px;
+      border-radius: 6px;
+      background-color: #3c79f4;
+      color: black;
+      font-weight: bold;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .badge:hover {
+      transform: scale(1.1);
+      box-shadow: 0 2px 6px rgba(0, 102, 255, 0.7);
+    }
+
+    .link {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .link:hover {
+      color: #828bef;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <img src="https://lh3.googleusercontent.com/a/ACg8ocKQYZkxJcYc9CXKBdIFHUagu0axDuv_lf-w6nNMxJC1Yv60yFDX=s360-c-no" alt="Erick Galindo">
+    <h1>Erick Galindo</h1>
+    <h2>👾 Frontend | 💻 Estudiante | 🤖 IA</h2>
+    <p>Apasionado por el Diseño y Desarrollo de Software, con un enfoque en parte de Frontend, UI/UX y el desarrollo de aplicaciones con Inteligencia Artificial.</p>
+    <ul>
+      <li class="badge">⚛️ React.js</li>
+      <li class="badge">🌐 HTML</li>
+      <li class="badge">🎨 CSS</li>
+      <li class="badge">📜 JavaScript</li>
+      <li class="badge">🔷 Tailwind CSS</li>
+      <li class="badge">🐍 Python</li>
+      <li class="badge">🛢️ MySQL</li>
+
+      <li class="badge">🎨 UI/UX</li>
+      <li class="badge">🖌️ Figma</li>
+    </ul>
+    <ul>
+      <li><a href="https://github.com/ErickGC546" class="link" target="_blank">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/erick-galindo/" class="link" target="_blank">LinkedIn</a></li>
+    </ul>
+  </main>
+</body>
+</html>
